@@ -1,0 +1,42 @@
+
+/*your code here*/
+body {
+    background-color: #eee;
+}
+.midline{
+  text-decoration: line-through;
+}
+.pointer {cursor: pointer;}
+/*your code here*/
+.correctblue{
+  color: blue;
+}
+.incorrectred{
+  color: red;
+}
+.leftside{
+  text-align: left;
+}
+.tangerinefont{
+  font-family: 'Tangerine', serif;
+  font-size: 22px;
+}
+.centerdiv{
+  margin-left: auto;
+  margin-right: auto;
+  width: 532px;
+}
+.collapse{
+  border-collapse: collapse;
+
+}
+table th{
+  border-bottom: 1px solid;
+  border-color: black;
+  padding: 5px;
+}
+table td{
+  border-bottom: 1px solid;
+  border-color: #cccccc;
+  padding: 5px;
+}

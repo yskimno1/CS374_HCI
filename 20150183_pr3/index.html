@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Capital Game!</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link href="./capital_game.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Your HTML here-->
+
+    <div class="centerdiv">
+      <div>
+        <h1 class="tangerinefont leftside"> Do you know the capital of this country? </h1>
+        <iframe id="place"
+  width="500"
+  height="400"
+  frameborder="0" style="border:0"
+  src="" allowfullscreen>
+</iframe>
+        <table id = "pr2__table", class="leftside collapse">
+            <tr>
+              <th> Country </th>
+              <th> Capital </th>
+              <th> Answer </th>
+            </tr>
+            <tr>
+              <form id="dataForm">
+                <td id="pr2__question", class="pointer"> </td>
+
+                <td > <input id="pr2__answer" /> </td>
+                <td > <button id="pr2__submit", type = "submit"> See answer </button> </td>
+
+              </form>
+              </tr>
+            <tr id="divide">
+              <td colspan="3">
+                <input type="radio" name="radio" id="radio_1" checked/>
+                <label for="radio_1"> All </label>
+                <input type="radio" name="radio" id="radio_2" />
+                <label for="radio_2"> Correct Only </label>
+                <input type="radio" name="radio" id="radio_3" />
+                <label for="radio_3" id="last"> Wrong Only </label>
+                <br />
+                <button id="pr3__undo", class = 'undo'> Undo </button>
+                <button id="pr3__clear", class = 'alldeletion'> Clear </button>
+                <button id="pr3__reset", class = 'reset'> Reset </button>
+
+              </td>
+            </tr>
+        </table>
+
+      </div>
+    </div>
+
+    <script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <!--<script src="./country_capital_pairs.js"></script>-->
+    <script src="./capital_game.js"></script>
+  </body>
+</html>
